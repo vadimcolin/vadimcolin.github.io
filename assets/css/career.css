@@ -1,0 +1,86 @@
+/* =================================================================
+   career.css — styles spécifiques à la page Career
+   (internship + professional project)
+   ================================================================= */
+
+.card {
+  background-color: var(--header-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 700px;
+}
+
+.card + .card {
+  margin-top: 1rem;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.card__meta {
+  color: #6b6452;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== Timeline des stages (récent en haut) ===== */
+.timeline {
+  list-style: none;
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  border-left: 3px solid var(--border);
+  max-width: 700px;
+}
+
+.timeline__item {
+  position: relative;
+  padding-bottom: 1.75rem;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+/* Pastille sur la ligne */
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: calc(-2rem - 9px);
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 3px solid var(--bg);
+}
+
+.timeline__date {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.timeline__title {
+  font-size: 1.1rem;
+}
+
+.timeline__meta {
+  color: #6b6452;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.timeline__img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}

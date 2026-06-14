@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Education</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/education.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__brand">My Portfolio</a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="activities.html">Activities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- ===== Part 1: Roadmap ===== -->
+    <section class="section">
+      <h1 class="section__title">Education</h1>
+      <h2 class="section__subtitle">Roadmap</h2>
+
+      <ol class="roadmap">
+        <li class="roadmap__item">
+          <span class="roadmap__year">Year 1</span>
+          <div class="roadmap__content">
+            <h3>PCSI — Preparatory school</h3>
+            <p>First year of intensive preparatory program. I developed strong foundations in mathematics, physics and engineering sciences, with an emphasis on analytical thinking and problem-solving</p>
+          </div>
+        </li>
+        <li class="roadmap__item">
+          <span class="roadmap__year">Year 2</span>
+          <div class="roadmap__content">
+            <h3>PSI — Preparatory school</h3>
+            <p>Second year of preparatory program leading to deepen my knowledge in applied mathematics and physics, while strenghtening my skills in algorithmic reasoning, scientific computing and rigorous methodology.</p>
+          </div>
+        </li>
+        <li class="roadmap__item">
+          <span class="roadmap__year">Year 3</span>
+          <div class="roadmap__content">
+            <h3>ENSEEIHT — 1st year</h3>
+            <p>
+              I strenghtened my foundations in computer science and applied mathematics, with a strong focus on software development and algorithmic problem-solving.
+              Through practical projects and teamwork, I developed rigorous coding practices, improved my ability to design reliable software solutions, and gained experience working in collaborative and demanding technical environments.
+            </p>
+          </div>
+        </li>
+        <li class="roadmap__item">
+          <span class="roadmap__year">Year 4</span>
+          <div class="roadmap__content">
+            <h3>ENSEEIHT — 2nd year</h3>
+            <p>During my second year at ENSEEIHT, I specialized in Software Engineerin.  I deepened my knowledge of software design and development through advanced courses. Project-based work strengthened my skills in designing robust applications, writing maintainable code, and collaborating within multidisciplinary teams.</p>
+          </div>
+        </li>
+        <li class="roadmap__item">
+          <span class="roadmap__year">Year 5</span>
+          <div class="roadmap__content">
+            <h3>ENSEEIHT — 3rd year</h3>
+            <p>Final year, end-of-studies project and internship.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Part 2: Academic projects (carousel) ===== -->
+    <section class="section">
+      <h2 class="section__subtitle">Academic projects</h2>
+
+      <div class="carousel" id="projects">
+        <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous project">&#8249;</button>
+
+        <div class="carousel__viewport">
+          <article class="project is-active">
+            <h3 class="project__title">Web-designed Catan</h3>
+            <p class="project__desc">Short description of the first academic project. (To complete.)</p>
+          </article>
+
+          <article class="project">
+            <h3 class="project__title">Rubik's Cube solver + 3d visualisation</h3>
+            <p class="project__desc">Short description of the second academic project. (To complete.)</p>
+          </article>
+
+          <article class="project">
+            <h3 class="project__title">Java compiler</h3>
+            <p class="project__desc">Short description of the third academic project. (To complete.)</p>
+          </article>
+
+          <article class="project">
+            <h3 class="project__title">Valorant object detector</h3>
+            <p class="project__desc">Short description of the third academic project. (To complete.)</p>
+          </article>
+        </div>
+
+        <button class="carousel__arrow carousel__arrow--next" aria-label="Next project">&#8250;</button>
+      </div>
+
+      <div class="carousel__dots" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/education.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Home</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav__brand">My Portfolio</a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/education.html">Education</a></li>
+        <li><a href="pages/international.html">International</a></li>
+        <li><a href="pages/career.html">Career</a></li>
+        <li><a href="pages/activities.html">Activities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- ===== En-tête : titre + photo ===== -->
+    <section class="hero">
+      <div class="hero__text">
+        <h1 class="hero__title">Vadim Colin <br> Portfolio</h1>
+      </div>
+
+      <!-- Remplace ce bloc par : <img src="assets/img/photo.jpg" alt="Photo de Vadim Colin" class="hero__photo" /> -->
+      <div class="hero__photo hero__photo--placeholder">
+        <img src="assets/img/photo.png" class="hero__photo" />
+      </div>
+    </section>
+
+    <!-- ===== Résumé ===== -->
+    <section class="section" id="resume">
+      <h1 class="section__title">Hello !</h1>
+      <p>
+        <!-- Résumé rapide de ton parcours socio-professionnel -->
+        My name is Vadim, I'm an engineering student at ENSEEIHT, specializing in Digital Sciences and Software Engineering.
+        I'm possionate about designing reliable and efficient software systems, with a strong interest in problem-solving and clean code.
+        Through this portfolio, I present a selection of my projects, technical skills and experiences that reflect my academic background and my approach to software development.        
+      </p>
+      <h2 class="section__title">Education</h2>
+      <p>
+        <!-- Résumé rapide de ton parcours socio-professionnel -->
+        Two years in a intensive preparatory program for french top engineering schools (PCSI/PSI) <br>
+        Three years at ENSEEIHT
+      </p>
+
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <h2 class="section__title">Contact</h2>
+
+      <ul class="contact__list">
+        <li><strong>Email :</strong>
+          <a href="mailto:vadim.colin@etu.toulouse-inp.fr">vadim.colin@etu.toulouse-inp.fr</a>
+        </li>
+        <li><strong>Phone :</strong>
+          <a href="tel:+33777675745">+33 7 77 67 57 45</a>
+        </li>
+        <li><strong>LinkedIn :</strong>
+          <a href="https://www.linkedin.com/in/vadim-colin-a18a1a32b/" target="_blank" rel="noopener">linkedin.com/vadim-colin</a>
+        </li>
+      </ul>
+
+      <div class="cv">
+        <h3 class="cv__title">CV</h3>
+        <p class="cv__links">
+          <!-- Dépose tes fichiers dans assets/cv/ puis ajuste les noms ci-dessous -->
+          <a class="btn" href="assets/cv/CV-Vadim-Colin-FR.pdf" download>
+            ⬇ French CV
+          </a>
+          <a class="btn" href="assets/cv/CV-Vadim-Colin-EN.pdf" download>
+            ⬇ English CV
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

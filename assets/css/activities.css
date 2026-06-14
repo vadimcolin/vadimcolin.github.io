@@ -1,0 +1,51 @@
+/* =================================================================
+   activities.css — styles spécifiques à la page Activities
+   (modèle image + texte, alternable)
+   ================================================================= */
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Inverse l'ordre image / texte */
+.activity--reverse {
+  flex-direction: row-reverse;
+}
+
+.activity__img {
+  width: 280px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.activity__img--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--header-bg);
+  color: #9a9078;
+}
+
+.activity__title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .activity,
+  .activity--reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .activity__img {
+    width: 100%;
+  }
+}

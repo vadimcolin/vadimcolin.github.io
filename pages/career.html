@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Career</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/career.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__brand">My Portfolio</a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="activities.html">Activities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- ===== Part 1: Internship ===== -->
+    <section class="section">
+      <h1 class="section__title">Career</h1>
+      <h2 class="section__subtitle">Internships</h2>
+
+      <!-- Timeline descendante : le stage le plus RÉCENT en haut.
+           Pour ajouter un stage, copie un bloc .timeline__item et place-le
+           dans l'ordre voulu (récent -> ancien). -->
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__date">2026</span>
+          <div class="card">
+            <h3 class="timeline__title">DevOps Internship</h3>
+            <p class="timeline__meta">Save Assistance — Montigny-le-bretonneux</p>
+            <p>Strengthening the quality and reliability of product code by automating controls using SonarQube and  GitHub Actions.</p>
+            <img src="../assets/img/save_assitance_logo.jpg" class="timeline__img" />
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__date">2025</span>
+          <div class="card">
+            <h3 class="timeline__title">Worker internship</h3>
+            <p class="timeline__meta">Earl de Beg'Ar Vil — Brittany, France</p>
+            <p>Worker in oister and mussel farms.</p>
+            <img src="../assets/img/photo_st_pab.jpeg" class="timeline__img" />
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Part 2: Professional Project ===== -->
+    <section class="section">
+      <h2 class="section__subtitle">Professional Project</h2>
+
+      <div class="card">
+        <p>
+          <!-- Présentation de ton projet professionnel / de carrière à compléter -->
+          Presentation of my career goals and professional project: 
+          <!-- the field I want to work in, the type of role I am aiming for, and my long-term ambitions. -->
+        </p>
+        <p>
+          Field : Space or New Technologies
+        </p>
+        <p>
+          I'm aiming for ...
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

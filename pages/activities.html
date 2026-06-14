@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Activities</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/activities.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__brand">My Portfolio</a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="activities.html">Activities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="section__title">Activities</h1>
+      <p>A few hobbies and activities I enjoy outside of my studies.</p>
+
+      <!-- Modèle image + texte. Pour ajouter un hobby, copie un bloc .activity.
+           Ajoute la classe .activity--reverse pour inverser image/texte. -->
+
+      <article class="activity">
+        <img src="../assets/img/photo_equipe_foot.jpeg" alt="Hobby 1" class="activity__img" />
+        <div class="activity__text">
+          <h2 class="activity__title">Sport</h2>
+          <p>
+            I play football with university. 
+            The activity helps me to keep shape, evacuate the pressure and have a good time with friends.
+            I also exercise with muscle-building and running
+          </p>
+        </div>
+      </article>
+
+      <article class="activity activity--reverse">
+        <img src="../assets/img/photo_scout.jpeg" alt="Hobby 2" class="activity__img" />
+        <div class="activity__text">
+          <h2 class="activity__title">Involvement</h2>
+          <p>
+            I've been a scout for 10 years when I was a kid and now I am a chief scout of a 25-children unity. 
+            It's a volunteer job which requires myself to be creative, enterprising, exemplary but I appreciate, above all, sharing what I learned and cared when I was among them.
+          </p>
+        </div>
+      </article>
+
+      <article class="activity">
+        <img src="../assets/img/carioca.jpg" class="activity__img" />        
+        <div class="activity__text">
+          <h2 class="activity__title">Cinema</h2>
+          <p>
+            I'm a huge fan of cinema, explicitly of horror and drama.
+            I've also been treasurer of my school's movie club.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

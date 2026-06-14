@@ -1,0 +1,123 @@
+/* =================================================================
+   education.css — styles spécifiques à la page Education
+   (roadmap + carrousel de projets)
+   ================================================================= */
+
+/* ===== Roadmap (timeline verticale) ===== */
+.roadmap {
+  list-style: none;
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  border-left: 3px solid var(--border);
+}
+
+.roadmap__item {
+  position: relative;
+  padding-bottom: 1.75rem;
+}
+
+.roadmap__item:last-child {
+  padding-bottom: 0;
+}
+
+/* Pastille sur la timeline */
+.roadmap__item::before {
+  content: "";
+  position: absolute;
+  left: calc(-2rem - 9px);
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 3px solid var(--bg);
+}
+
+.roadmap__year {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.roadmap__content h3 {
+  font-size: 1.1rem;
+}
+
+/* ===== Carrousel des projets ===== */
+.carousel {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.carousel__viewport {
+  flex: 1;
+  position: relative;
+  min-height: 140px;
+  background-color: var(--header-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Un seul projet visible à la fois */
+.project {
+  display: none;
+}
+
+.project.is-active {
+  display: block;
+  animation: fade-in 0.35s ease;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateX(10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.project__title {
+  margin-bottom: 0.5rem;
+}
+
+.carousel__arrow {
+  flex-shrink: 0;
+  width: 44px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.carousel__arrow:hover {
+  opacity: 0.85;
+}
+
+/* Points indicateurs */
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carousel__dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background-color: var(--border);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.carousel__dot.is-active {
+  background-color: var(--accent);
+}
